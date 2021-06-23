@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  width: 90%;
+  margin: 30px auto 0;
+
+  h1 {
+    text-align: center;
+    font-size: 1.5em;
+  }
+
+  form {
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 0;
+    box-sizing: border-box;
+    text-align: center;
+    border: 1px solid rgb(65, 57, 57);
+    border-radius: 10px;
+
+    input {
+      font-size: 1.1em;
+      padding: 3px;
+      width: 60%;
+      border: 1px solid grey;
+      border-radius: 5px;
+      outline: 0;
+
+      &:focus {
+        border-color: rgb(49, 107, 214);
+      }
+    }
+
+    button {
+      font-size: 1.1em;
+      padding: 5px;
+      margin-left: 10px;
+      background: rgb(49, 107, 214);
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  }
+
+  .card {
+    border: 2px solid rgba(161, 152, 152, 0.233);
+    border-radius: 5px;
+    margin: 10px auto;
+    padding: 5px;
+    box-sizing: border-box;
+    width: 70%;
+    height: auto;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    p {
+      margin: 0;
+      font-size: 1.1em;
+    }
+
+    span {
+      font-weight: bold;
+    }
+
+    a {
+      color: rgb(49, 107, 214);
+      text-decoration: none;
+    }
+  }
+}
+
+@media screen and (min-width: 786px) {
+  main {
+    width: 70%;
+
+    h1 {
+      font-size: 2em;
+    }
+
+    .cardList {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    form {
+      width: 70%;
+
+      input {
+        padding: 8px;
+        font-size: 1.3em;
+        border: 2px solid grey;
+      }
+      button {
+        padding: 8px;
+        font-size: 1.3em;
+      }
+    }
+  }
+}
